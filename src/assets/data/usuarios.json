@@ -1,0 +1,45 @@
+{
+  "administrativo": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "correo": "juan@example.com",
+      "genero": "Masculino",
+      "modelo_de_auto": "Toyota Corolla",
+      "imagen":"../../../assets/images/auto.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "María",
+      "apellido": "González",
+      "correo": "maria@example.com",
+      "genero": "Femenino",
+      "modelo_de_auto": "Honda Civic"
+    },
+    {
+      "id": 4,
+      "nombre": "Ana",
+      "apellido": "Martínez",
+      "correo": "ana@example.com",
+      "genero": "Femenino",
+      "modelo_de_auto": "Volkswagen Golf"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro",
+      "apellido": "Sánchez",
+      "correo": "pedro@example.com",
+      "genero": "Masculino",
+      "modelo_de_auto": "Chevrolet Camaro"
+    },
+    {
+      "id": 6,
+      "nombre": "Miguel",
+      "apellido": "Paz",
+      "correo": "mi@cni.com",
+      "genero": "male",
+      "modelo_de_auto": "Ford"
+    }
+  ]
+}

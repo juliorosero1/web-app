@@ -1,0 +1,56 @@
+<div class="row mx-auto">
+    <form class="col-md-4">
+
+        <div class="row">
+            <div class="col-md-4">
+                <label for="id" class="form-label">ID:</label>
+                <input type="number" class="form-control" id="id" placeholder="Enter id" #id>
+            </div>
+
+            <div class="col-md-4">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Enter nombre" #nom>
+            </div>
+            <div class="col-md-4">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Enter apellido" #ape>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" #mail>
+            </div>
+
+            <div class="col-md-4">
+                <label for="genero" class="form-label">Género:</label>
+                <select class="form-control" id="genero" #gen>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="auto" class="form-label">Modelo de auto:</label>
+                <input type="text" class="form-control" id="auto" placeholder="Enter auto" #auto>
+            </div>
+        </div>
+
+
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary m-1"
+             (click)="guardarNosotros(id.value, nom.value, ape.value, mail.value, gen.value,auto.value)">Enviar</button>
+
+            <button type="submit" class="btn btn-success m-1"
+             (click)="actualizarNosotros(id.value, nom.value, ape.value, mail.value, gen.value, auto.value)">Actualizar</button>
+
+            <button type="submit" class="btn btn-danger m-1" (click)="eliminarNosotros(id.value)">Eliminar</button>
+        </div>
+    </form>
+
+    <div class="col-md-8">
+        <app-tabla></app-tabla>
+    </div>
+</div>
